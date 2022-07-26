@@ -2,11 +2,18 @@
   "name": "rand0mcode-modern_shell_tools",
   "version": "0.1.0",
   "author": "Robert Waffen",
-  "summary": "",
+  "summary": "Manage modern shell tools",
   "license": "LGPL-3.0-or-later",
-  "source": "",
+  "source": "https://github.com/rand0mcode/puppet-modern_shell_tools",
   "dependencies": [
-
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.13.1 < 9.0.0"
+    },
+    {
+      "name": "puppet/archive",
+      "version_requirement": ">= 6.0.2 < 9.0.0"
+    }
   ],
   "operatingsystem_support": [
     {
@@ -64,7 +71,7 @@
       "version_requirement": ">= 6.21.0 < 8.0.0"
     }
   ],
-  "pdk-version": "2.4.0",
-  "template-url": "pdk-default#2.4.0",
-  "template-ref": "tags/2.4.0-0-gfa6b6d2"
+  "pdk-version": "2.5.0",
+  "template-url": "pdk-default#2.5.0",
+  "template-ref": "tags/2.5.0-0-g369d483"
 }
