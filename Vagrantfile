@@ -12,6 +12,8 @@ Vagrant.configure("2") do |config|
     yum remove  -q -y puppet6-release
     yum install -q -y https://yum.puppet.com/puppet7-release-el-8.noarch.rpm
     yum update  -q -y puppet-agent
+    /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib
+    /opt/puppetlabs/bin/puppet module install puppet-archive
   SCRIPT
 
   config.vm.provision :shell, inline: $rhel_script

@@ -4,6 +4,15 @@
 #
 # @example
 #   include modern_shell_tools::install::dyff
+#
+# @param arch
+# @param build
+# @param version
+# @param archive_name
+# @param install_path
+# @param bin_path
+# @param create_path
+#
 class modern_shell_tools::install::dyff (
   String[1] $arch                    = $facts['os']['architecture'],
   String[1] $build                   = 'linux',

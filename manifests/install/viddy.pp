@@ -3,7 +3,7 @@
 # A description of what this class does
 #
 # @example
-#   include modern_shell_tools::install::broot
+#   include modern_shell_tools::install::viddy
 #
 # @param arch
 # @param build
@@ -11,16 +11,14 @@
 # @param archive_name
 # @param install_path
 # @param bin_path
-# @param create_path
 #
-class modern_shell_tools::install::broot (
+class modern_shell_tools::install::viddy (
   String[1] $arch                    = $facts['os']['architecture'],
-  String[1] $build                   = 'linux',
-  String[1] $version                 = '1.13.1',
-  String[1] $archive_name            = "broot_${version}.zip",
-  Stdlib::Absolutepath $install_path = "/opt/mst/broot-${version}",
+  String[1] $build                   = 'Linux',
+  String[1] $version                 = '0.3.6',
+  String[1] $archive_name            = "viddy_${version}_${build}_${arch}.tar.gz",
+  Stdlib::Absolutepath $install_path = "/opt/mst/viddy-${version}",
   Stdlib::Absolutepath $bin_path     = '/usr/local/sbin',
-  Stdlib::Absolutepath $create_path  = "${install_path}/${arch}-unknown-${build}-gnu",
 ) {
   include modern_shell_tools::install
 
@@ -30,15 +28,15 @@ class modern_shell_tools::install::broot (
 
   -> archive { $archive_name:
     path         => "/tmp/${archive_name}",
-    source       => "https://github.com/Canop/broot/releases/download/v${version}/${archive_name}",
+    source       => "https://github.com/sachaos/viddy/releases/download/v${version}/${archive_name}",
     extract      => true,
     extract_path => $install_path,
-    creates      => $create_path,
+    creates      => $install_path,
     cleanup      => false,
   }
 
-  -> file { "${bin_path}/broot":
+  -> file { "${bin_path}/viddy":
     ensure => link,
-    target => "${create_path}/broot",
+    target => "${install_path}/viddy",
   }
 }
