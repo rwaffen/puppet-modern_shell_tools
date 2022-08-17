@@ -1,10 +1,10 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary A private class for installing prerequirements
 #
 # @example
 #   include modern_shell_tools::install
 class modern_shell_tools::install {
+  assert_private()
+
   package { ['wget', 'unzip', 'git']:
     ensure => installed,
   }

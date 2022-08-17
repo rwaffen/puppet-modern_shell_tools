@@ -1,6 +1,4 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary δyƒƒ /ˈdʏf/ - a diff tool for YAML files, and sometimes JSON
 #
 # @example
 #   include modern_shell_tools::install::dyff

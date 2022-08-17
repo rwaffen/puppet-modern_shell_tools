@@ -1,6 +1,4 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary A modern replacement for top/htop
 #
 # @example
 #   include modern_shell_tools::install::bashtop

@@ -1,9 +1,8 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary Installs a set of modern commandline tools
 #
 # @example
 #   include modern_shell_tools
+#
 class modern_shell_tools {
   include modern_shell_tools::install
   include modern_shell_tools::install::bashtop

@@ -1,6 +1,4 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary jc converts the output of many commands and file-types to JSON
 #
 # @example
 #   include modern_shell_tools::install::jc

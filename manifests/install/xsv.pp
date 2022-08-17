@@ -1,6 +1,4 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary A suite of CSV command line utilities
 #
 # @example
 #   include modern_shell_tools::install::xsv
