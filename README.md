@@ -12,13 +12,13 @@
 
 ## Description
 
-Installs a modern set of commandline tools
+Installs a set of modern commandline tools
 
 ## Setup
 
 ### What modern_shell_tools affects **OPTIONAL**
 
-install in /opt/mst a set of tools and links it to /usr/local/sbin
+It installs a set of modern commandline tools in `/opt/mst` and links it to `/usr/local/sbin`.
 
 ### Setup Requirements **OPTIONAL**
 
