@@ -5,7 +5,7 @@
 # @example
 #   include modern_shell_tools::install
 class modern_shell_tools::install {
-  package { ['wget', 'unzip']:
+  package { ['wget', 'unzip', 'git']:
     ensure => installed,
   }
 
