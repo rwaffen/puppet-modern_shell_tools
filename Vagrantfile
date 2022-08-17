@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
     yum install -q -y https://yum.puppet.com/puppet7-release-el-8.noarch.rpm
     yum update  -q -y puppet-agent
     /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib
+    /opt/puppetlabs/bin/puppet module install puppetlabs-vcsrepo
     /opt/puppetlabs/bin/puppet module install puppet-archive
   SCRIPT
 
