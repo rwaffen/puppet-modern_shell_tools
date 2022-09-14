@@ -12,10 +12,10 @@
 # @param create_path
 #
 class modern_shell_tools::install::dyff (
-  String[1] $arch                    = $facts['os']['architecture'],
+  String[1] $arch                    = 'amd64',
   String[1] $build                   = 'linux',
   String[1] $version                 = '1.5.4',
-  String[1] $archive_name            = "dyff_${version}_${build}_amd64.tar.gz",
+  String[1] $archive_name            = "dyff_${version}_${build}_${arch}.tar.gz",
   Stdlib::Absolutepath $install_path = "/opt/mst/dyff-${version}",
   Stdlib::Absolutepath $bin_path     = '/usr/local/sbin',
   Stdlib::Absolutepath $create_path  = "${install_path}/dyff",

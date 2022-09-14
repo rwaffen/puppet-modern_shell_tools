@@ -12,7 +12,7 @@
 # @param create_path
 #
 class modern_shell_tools::install::exa (
-  String[1] $arch                    = $facts['os']['architecture'],
+  String[1] $arch                    = 'x86_64',
   String[1] $build                   = 'linux',
   String[1] $version                 = '0.10.0',
   String[1] $archive_name            = "exa-${build}-${arch}-v${version}.zip",

@@ -198,7 +198,7 @@ Data type: `String[1]`
 
 
 
-Default value: `$facts['os']['architecture']`
+Default value: `'amd64'`
 
 ##### <a name="build"></a>`build`
 
@@ -222,7 +222,7 @@ Data type: `String[1]`
 
 
 
-Default value: `"dyff_${version}_${build}_amd64.tar.gz"`
+Default value: `"dyff_${version}_${build}_${arch}.tar.gz"`
 
 ##### <a name="install_path"></a>`install_path`
 
@@ -278,7 +278,7 @@ Data type: `String[1]`
 
 
 
-Default value: `$facts['os']['architecture']`
+Default value: `'x86_64'`
 
 ##### <a name="build"></a>`build`
 
@@ -358,7 +358,7 @@ Data type: `String[1]`
 
 
 
-Default value: `$facts['os']['architecture']`
+Default value: `'x86_64'`
 
 ##### <a name="build"></a>`build`
 
@@ -589,7 +589,7 @@ Data type: `String[1]`
 
 
 
-Default value: `$facts['os']['architecture']`
+Default value: `'x86_64'`
 
 ##### <a name="build"></a>`build`
 
@@ -669,7 +669,7 @@ Data type: `String[1]`
 
 
 
-Default value: `$facts['os']['architecture']`
+Default value: `'x86_64'`
 
 ##### <a name="build"></a>`build`
 

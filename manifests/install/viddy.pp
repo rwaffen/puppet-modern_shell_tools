@@ -12,7 +12,7 @@
 # @param create_path
 #
 class modern_shell_tools::install::viddy (
-  String[1] $arch                    = $facts['os']['architecture'],
+  String[1] $arch                    = 'x86_64',
   String[1] $build                   = 'Linux',
   String[1] $version                 = '0.3.6',
   String[1] $archive_name            = "viddy_${version}_${build}_${arch}.tar.gz",
