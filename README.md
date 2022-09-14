@@ -6,8 +6,8 @@
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Setup](#setup)
-    - [What modern_shell_tools affects **OPTIONAL**](#what-modern_shell_tools-affects-optional)
-    - [Setup Requirements **OPTIONAL**](#setup-requirements-optional)
+    - [What modern_shell_tools affects](#what-modern_shell_tools-affects)
+    - [Setup Requirements](#setup-requirements)
   - [Reference](#reference)
   - [Usage](#usage)
     - [Single tool installation](#single-tool-installation)
@@ -21,13 +21,13 @@ Installs a set of modern commandline tools
 
 ## Setup
 
-### What modern_shell_tools affects **OPTIONAL**
+### What modern_shell_tools affects
 
 It installs a set of modern commandline tools in `/opt/mst` and links it to `/usr/local/sbin`.
 
 For some tools packages exist, for some not. To have a more or less unified way to get the tools without to much hasle we download them directly from their github release pages as binary archives.
 
-### Setup Requirements **OPTIONAL**
+### Setup Requirements
 
 puppet-archive and puppetlabs-vcsrepo are needed.
 
