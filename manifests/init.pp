@@ -6,6 +6,7 @@
 class modern_shell_tools {
   include modern_shell_tools::install
   include modern_shell_tools::install::bashtop
+  include modern_shell_tools::install::bat
   include modern_shell_tools::install::broot
   include modern_shell_tools::install::dyff
   include modern_shell_tools::install::exa
