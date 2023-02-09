@@ -9,6 +9,7 @@
 * [`modern_shell_tools`](#modern_shell_tools): Installs a set of modern commandline tools
 * [`modern_shell_tools::install`](#modern_shell_toolsinstall): A private class for installing prerequirements
 * [`modern_shell_tools::install::bashtop`](#modern_shell_toolsinstallbashtop): A modern replacement for top/htop
+* [`modern_shell_tools::install::bat`](#modern_shell_toolsinstallbat): A cat(1) clone with syntax highlighting and Git integration.
 * [`modern_shell_tools::install::broot`](#modern_shell_toolsinstallbroot): A tree explorer and a customizable launcher
 * [`modern_shell_tools::install::dyff`](#modern_shell_toolsinstalldyff): δyƒƒ /ˈdʏf/ - a diff tool for YAML files, and sometimes JSON
 * [`modern_shell_tools::install::exa`](#modern_shell_toolsinstallexa): A modern replacement for ls
@@ -87,6 +88,86 @@ Data type: `Stdlib::Absolutepath`
 
 
 Default value: `'/usr/local/sbin'`
+
+### <a name="modern_shell_toolsinstallbat"></a>`modern_shell_tools::install::bat`
+
+A cat(1) clone with syntax highlighting and Git integration.
+
+#### Examples
+
+##### 
+
+```puppet
+include modern_shell_tools::install::bat
+```
+
+#### Parameters
+
+The following parameters are available in the `modern_shell_tools::install::bat` class:
+
+* [`arch`](#arch)
+* [`build`](#build)
+* [`version`](#version)
+* [`archive_name`](#archive_name)
+* [`install_path`](#install_path)
+* [`bin_path`](#bin_path)
+* [`create_path`](#create_path)
+
+##### <a name="arch"></a>`arch`
+
+Data type: `String[1]`
+
+
+
+Default value: `'x86_64'`
+
+##### <a name="build"></a>`build`
+
+Data type: `String[1]`
+
+
+
+Default value: `'linux'`
+
+##### <a name="version"></a>`version`
+
+Data type: `String[1]`
+
+
+
+Default value: `'0.22.1'`
+
+##### <a name="archive_name"></a>`archive_name`
+
+Data type: `String[1]`
+
+
+
+Default value: `"bat-v${version}-${arch}-unknown-${build}-gnu.tar.gz"`
+
+##### <a name="install_path"></a>`install_path`
+
+Data type: `Stdlib::Absolutepath`
+
+
+
+Default value: `"/opt/mst/bat-${version}"`
+
+##### <a name="bin_path"></a>`bin_path`
+
+Data type: `Stdlib::Absolutepath`
+
+
+
+Default value: `'/usr/local/sbin'`
+
+##### <a name="create_path"></a>`create_path`
+
+Data type: `Stdlib::Absolutepath`
+
+
+
+Default value: `"${install_path}/bat-v${version}-${arch}-unknown-${build}-gnu"`
 
 ### <a name="modern_shell_toolsinstallbroot"></a>`modern_shell_tools::install::broot`
 
