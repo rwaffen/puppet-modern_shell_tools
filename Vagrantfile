@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "betadots/centos8p6"
+  config.vm.box = "betadots/centos8p7"
   config.vm.synced_folder ".", "/etc/puppetlabs/code/environments/production/modules/modern_shell_tools"
 
   config.vm.provider "virtualbox" do |vb|
@@ -8,9 +8,6 @@ Vagrant.configure("2") do |config|
   end
 
   $rhel_script = <<-SCRIPT
-    yum remove  -q -y puppet6-release
-    yum install -q -y https://yum.puppet.com/puppet7-release-el-8.noarch.rpm
-    yum update  -q -y puppet-agent
     /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib
     /opt/puppetlabs/bin/puppet module install puppetlabs-vcsrepo
     /opt/puppetlabs/bin/puppet module install puppet-archive
