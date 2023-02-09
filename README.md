@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-- [modern_shell_tools](#modern_shell_tools)
+- [modern\_shell\_tools](#modern_shell_tools)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Setup](#setup)
-    - [What modern_shell_tools affects](#what-modern_shell_tools-affects)
+    - [What modern\_shell\_tools affects](#what-modern_shell_tools-affects)
     - [Setup Requirements](#setup-requirements)
   - [Reference](#reference)
   - [Usage](#usage)
@@ -60,6 +60,7 @@ Include the main class
 included are:
 
     bashtop-0.9.25 ... an advanced top alternative
+    bat-0.22.1     ... a cat(1) clone with syntax highlighting and git integration
     broot-1.13.1   ... a tree explorer and a customizable launcher
     dyff-1.5.4     ... a diff tool for YAML files
     exa-0.10.0     ... a colorful ls replacement
@@ -71,6 +72,7 @@ included are:
 
 ### Sources
 - https://github.com/aristocratos/bashtop
+- https://github.com/sharkdp/bat
 - https://github.com/Canop/broot
 - https://github.com/homeport/dyff
 - https://github.com/ogham/exa

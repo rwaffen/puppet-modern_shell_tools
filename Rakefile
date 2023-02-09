@@ -70,6 +70,7 @@ if Bundler.rubygems.find_name('github_changelog_generator').any?
         "labels" => ["bug", "documentation", "bugfix"],
       },
     }
+    config.future_release = '1.1.1'
   end
 else
   desc 'Generate a Changelog from GitHub'
@@ -87,4 +88,3 @@ Gemfile:
 EOM
   end
 end
-
